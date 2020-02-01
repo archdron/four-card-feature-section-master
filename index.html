@@ -26,50 +26,84 @@
       margin: auto 24px;
     }
 
+    h2{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
     .card{
-      height: 13.5rem;
-      width: 19.75rem;
+      height: 184px;
+      width: 284px;
       box-shadow: 0px 16px 16px 1px  hsl(234, 12%, 90%);
       border-top: 6px;
       border-top-style: solid;
       border-radius: 6px;
       padding: 2rem;
-      margin: 2rem;
     }
 
-    @media screen and (min-width: 1440px){
-      .card{
-        margin: 2rem auto;
+    @media screen and (min-width: 375px){
+      #bottom-block{
+        display:grid;
+        grid-template-columns: auto 348px 32px 348px 32px 348px auto;
+        grid-template-rows: 142px 108px 32px 108px 284px;
+      }
+      /*.card{
+        margin: 32px auto;
+      }*/
+
+      .cardimg{
+        position: relative;
+        top: 40px;
+        left: 226px;
       }
 
-      #supvis{
-        position: absolute;
-        left: 10rem;
-        bottom: -5rem;
+      #tbuild{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 4;
+      }
+
+      #karma{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 4;
       }
 
       #calc{
-        position: absolute;
-        right: 10rem;
-        bottom: -5rem;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 6;
+        grid-column-end: 6;
+      }
+
+      #supvis{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 2;
       }
     }
 
-    @media screen and (max-width: 1440px){
+    @media screen and (max-width: 1216px){
+      #bottom-block{
+        display:block;
+      }
       .card{
-        width: 20.5rem;
-        height: auto;
+        width: 284px;
+        height: 184px;
         margin: 2rem auto;
       }
-    }
 
-    .cardimg{
-      position: relative;
-      top: 2.5rem;
-      left: 16rem;
+      .cardimg{
+        position: relative;
+        top: 40px;
+        left: 226px;
+      }
     }
 
 
@@ -89,12 +123,8 @@
     <h1 style="font-weight: 600; margin-bottom: 18px;">Powered by Technology</h1>
     <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
   </div>
-  <div>
-    <div id="supvis" class="card" style="border-color: hsl(180, 62%, 55%);">
-      <h2>Supervisor</h2>
-      <p>Monitors activity to identify project roadblocks</p>
-      <img class="cardimg" src="images/icon-supervisor.svg" alt="">
-    </div>
+
+  <div id="bottom-block">
 
     <div id="tbuild" class="card" style="border-color: hsl(0, 78%, 62%);">
       <h2>Team Builder</h2>
@@ -102,16 +132,23 @@
       <img class="cardimg" src="images/icon-team-builder.svg" alt="">
     </div>
 
-    <div id="karma" class="card" style="border-color: hsl(34, 97%, 64%);">
-      <h2>Karma</h2>
-      <p>Regularly evaluates our talent to ensure quality</p>
-      <img class="cardimg" src="images/icon-karma.svg" alt="">
+    <div id="supvis" class="card" style="border-color: hsl(180, 62%, 55%);">
+      <h2>Supervisor</h2>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img class="cardimg" src="images/icon-supervisor.svg" alt="">
     </div>
 
     <div id="calc" class="card" style="border-color: hsl(212, 86%, 64%);">
       <h2>Calculator</h2>
       <p>Uses data from past projects to provide better delivery estimates</p>
-    <img class="cardimg" src="images/icon-calculator.svg" alt="">
+      <img class="cardimg" src="images/icon-calculator.svg" alt="">
+    </div>
+
+    <div id="karma" class="card" style="border-color: hsl(34, 97%, 64%);">
+      <h2>Karma</h2>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img class="cardimg" src="images/icon-karma.svg" alt="">
+    </div>
   </div>
 
   <footer style="margin: 3rem auto;">
