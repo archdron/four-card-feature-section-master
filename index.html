@@ -23,7 +23,7 @@
       color: hsl(234, 12%, 34%);
       font-family: Poppins, sans-serif;
       font-weight: 200;
-      margin: auto 24px;
+      margin: auto;
     }
 
     h2{
@@ -44,20 +44,23 @@
       padding: 2rem;
     }
 
-    @media screen and (min-width: 375px){
+    @media screen and (min-width: 1216px){
+      .cardimg{
+        position: relative;
+        top: 40px;
+        left: 226px;
+      }
+
       #bottom-block{
         display:grid;
         grid-template-columns: auto 348px 32px 348px 32px 348px auto;
         grid-template-rows: 142px 108px 32px 108px 284px;
       }
-      /*.card{
-        margin: 32px auto;
-      }*/
 
-      .cardimg{
-        position: relative;
-        top: 40px;
-        left: 226px;
+      #top-block{
+        margin: 92px auto;
+        width: 40%;
+        text-align: center;
       }
 
       #tbuild{
@@ -90,9 +93,11 @@
     }
 
     @media screen and (max-width: 1216px){
-      #bottom-block{
-        display:block;
+
+      h1{
+        font-size: 1.5rem;
       }
+
       .card{
         width: 284px;
         height: 184px;
@@ -104,13 +109,16 @@
         top: 40px;
         left: 226px;
       }
-    }
 
+      #top-block{
+        width: 85%;
+        margin: 3rem auto;
+        text-align: center;
+      }
 
-    #top-block{
-      margin: 92px auto;
-      width: 40%;
-      text-align: center;
+      #bottom-block{
+        display:block;
+      }
     }
 
   </style>
