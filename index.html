@@ -37,10 +37,34 @@
       border-top-style: solid;
       border-radius: 6px;
       padding: 34px;
-      margin: 30px auto;
+      margin: 30px;
     }
 
-    @media screen and (max-width: 375px)
+    @media screen and (min-width: 375px){
+      .card{
+        margin: 2rem auto;
+      }
+
+      #supvis{
+        position: absolute;
+        left: 14.5rem;
+        bottom: 0rem;
+      }
+
+      #calc{
+        position: absolute;
+        right: 14.5rem;
+        bottom: 0rem;
+      }
+    }
+
+    @media screen and (max-width: 375px){
+      .card{
+        width: 50vw;
+        height: auto;
+        margin: 30px auto;
+      }
+    }
 
     .cardimg{
       position: relative;
@@ -65,33 +89,32 @@
     <h1 style="font-weight: 600; margin-bottom: 18px;">Powered by Technology</h1>
     <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
   </div>
+  <div>
+    <div id="supvis" class="card" style="border-color: hsl(180, 62%, 55%);">
+      <h2>Supervisor</h2>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img class="cardimg" src="images/icon-supervisor.svg" alt="">
+    </div>
 
-  <div id="supvis" class="card" style="border-color: hsl(180, 62%, 55%);">
-    <h2>Supervisor</h2>
-    <p>Monitors activity to identify project roadblocks</p>
-    <img class="cardimg" src="images/icon-supervisor.svg" alt="">
-  </div>
+    <div id="tbuild" class="card" style="border-color: hsl(0, 78%, 62%);">
+      <h2>Team Builder</h2>
+      <p>Scans our talent network to create the optimal team for your project</p>
+      <img class="cardimg" src="images/icon-team-builder.svg" alt="">
+    </div>
 
-  <div id="tbuild" class="card" style="border-color: hsl(0, 78%, 62%);">
-    <h2>Team Builder</h2>
-    <p>Scans our talent network to create the optimal team for your project</p>
-    <img class="cardimg" src="images/icon-team-builder.svg" alt="">
-  </div>
+    <div id="karma" class="card" style="border-color: hsl(34, 97%, 64%);">
+      <h2>Karma</h2>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img class="cardimg" src="images/icon-karma.svg" alt="">
+    </div>
 
-  <div id="karma" class="card" style="border-color: hsl(34, 97%, 64%);">
-    <h2>Karma</h2>
-    <p>Regularly evaluates our talent to ensure quality</p>
-    <img class="cardimg" src="images/icon-karma.svg" alt="">
-  </div>
-
-  <div id="calc" class="card" style="border-color: hsl(212, 86%, 64%);">
-    <h2>Calculator</h2>
-    <p>Uses data from past projects to provide better delivery estimates</p>
+    <div id="calc" class="card" style="border-color: hsl(212, 86%, 64%);">
+      <h2>Calculator</h2>
+      <p>Uses data from past projects to provide better delivery estimates</p>
     <img class="cardimg" src="images/icon-calculator.svg" alt="">
   </div>
 
-
-  <footer>
+  <footer style="margin: 3rem auto;">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
