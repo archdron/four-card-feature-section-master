@@ -1,0 +1,44 @@
+body{background-color: hsl(0, 0%, 98%)}
+
+p {
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  margin: 0px;
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  margin: auto;
+}
+
+h2{
+  color: hsl(234, 12%, 34%);
+  font-family: Poppins, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*defining a card*/
+.card{
+  height: 184px;
+  width: 284px;
+  box-shadow: 0px 16px 16px 1px  hsl(234, 12%, 90%);
+  border-top: 6px;
+  border-top-style: solid;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+/*positioning icons on the card*/
+.cardimg{
+  position: relative;
+  top: 40px;
+  left: 226px;
+}

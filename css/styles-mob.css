@@ -1,0 +1,22 @@
+@media screen and (max-width: 1216px){
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .card{
+    width: 284px;
+    height: 184px;
+    margin: 2rem auto;
+  }
+
+  #top-block{
+    width: 20rem;
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  #bottom-block{
+    display:block;
+  }
+}

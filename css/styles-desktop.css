@@ -1,0 +1,45 @@
+@media screen and (min-width: 1216px){
+
+  /*setting up the text block*/
+  #top-block{
+    margin: 64px auto 64px auto;
+    width: 35rem;
+    text-align: center;
+  }
+
+  /*setting up the card block*/
+  #bottom-block{
+    display:grid;
+    grid-template-columns: auto 348px 32px 348px 32px 348px auto;
+    grid-template-rows: 142px 108px 32px 108px 142px;
+    margin-bottom: 12rem;
+  }
+
+  #tbuild{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  #karma{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  #calc{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 6;
+  }
+
+  #supvis{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
